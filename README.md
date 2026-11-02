@@ -99,4 +99,4 @@ tests/
 
 ## Licence
 
-No licence file has been added yet.
+Apache License 2.0. See [LICENSE](LICENSE).
