@@ -17,3 +17,4 @@
 | S-ADD-100 | 1 | pass | see commits on `impl-v39-addendum-20261102` |
 | S-ADD-090 | 1 | pass | verifier exit 0 |
 | S-ADD-100 | 1 | pass | remote SHA verified |
+| 2026-11-03T00:00:00Z | S-LISTEN/G-LISTEN | 1 | blocked | listening/G-LISTEN/round-001/result.json | n/a | build deterministic offline renderer (freeze CLI/event schema); secure 12+ redistribution-compatible sitar references; then run round-001 seed 20261104 |

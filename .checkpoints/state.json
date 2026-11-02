@@ -12,8 +12,22 @@
   "audited_commit": "1d91a89ae26722718fc8362023fc3684493d5c17"
  },
  "artifacts": {
-  "ADDENDUM-V3.9-STATUS.md": "written"
+  "ADDENDUM-V3.9-STATUS.md": "written",
+  "GATE-G-LISTEN.md": "written"
  },
  "lesson_store": "qualitycoding/Lessons",
- "knowledge_store": "qualitycoding/knowledge"
+ "knowledge_store": "qualitycoding/knowledge",
+ "mode_flags": {
+  "audio": true
+ },
+ "listening_gate": {
+  "gate_id": "G-LISTEN",
+  "active_step": "S-LISTEN",
+  "round": 1,
+  "status": "blocked",
+  "evidence": "listening/G-LISTEN/round-001/result.json",
+  "candidate_commit": "1aa2730ff44023ebe8ab78aeb14a6780238f001a",
+  "decision": "D-981",
+  "next_step": "build offline renderer; secure references; run S-LISTEN round-001 (seed 20261104)"
+ }
 }

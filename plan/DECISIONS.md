@@ -24,3 +24,20 @@
   (S-ADD-090), not claimed as an independent pass.
 - **D-980** — Mutation testing design: see `reviews/MUTATION.md` (priced
   three-tier trigger strategy, one aggregator job, report-based score gate).
+- **D-981** — Listening-only amendment (blind realism gate G-LISTEN):
+  branch `impl/listening-validation` created from current `main`
+  (1aa2730ff44023ebe8ab78aeb14a6780238f001a); `audio = true` set in
+  plan/PROFILE.md and checkpoint mode flags; S-LISTEN added after
+  implementation/reviews and before S-RETRO; G-LISTEN defined in
+  plan/GATES.md (12 onset pairs, `--window start`, 1.0 s, −23 dBFS RMS,
+  10 ms fades, 44.1 kHz PCM-24, ≤8/12, max three rounds, base seed
+  20261104). Vendored canonical pair tools from qualitycoding/skills @
+  7915c7b7e0cecbee5116e72a4cf5699383df5983: scripts/make_blind_pairs.py
+  sha256 3c4f75854e2a692d3a77460d470e289be405c2166bbc30abbd4eeb053d6824c7;
+  scripts/score_blind.py sha256
+  f2d9ea5c76a731fd3dd553d698a9f1a92b393d272f6ea898e6a9e5cbde49defa.
+  19-test DSP suite re-run 2026-11-03 (19/19 pass) — DSP properties, not
+  realism. Round-001 blocked: no deterministic JUCE-free offline renderer
+  exists and redistribution-compatible sitar references are not secured
+  (recorded in listening/G-LISTEN/round-001/result.json). No frozen test
+  weakened; product execution remains unauthorised by this amendment.
