@@ -1,6 +1,6 @@
 # Sitar VST & Physical Modeling Audio Synthesizer
 
-A physical modeling virtual instrument and DSP synthesizer reproducing the acoustics of the Indian Sitar, built in **pure C++20** with optional **JUCE 7** VST3/Standalone plugin targets.
+A physical modeling virtual instrument and DSP synthesizer reproducing the acoustics of the Indian Sitar, built in **pure C++20** with an optional JUCE plugin target (VST3, Standalone, AU).
 
 ## Features
 
@@ -23,6 +23,17 @@ cmake --build build --config Release
 
 # Run the 19 verified tests
 ./build/sitar_tests
+```
+
+## Building the plugin (optional)
+
+The plugin target is only added when JUCE is available. Put a JUCE checkout in `./JUCE` or pass
+`-DJUCE_DIR=/path/to/JUCE` at configure time. It builds VST3, Standalone and AU (AU on macOS only). The plugin has not
+been built or tested in this repository's records: only the DSP library and its 19 tests have.
+
+```bash
+cmake -B build -DCMAKE_BUILD_TYPE=Release -DJUCE_DIR=/path/to/JUCE
+cmake --build build --config Release
 ```
 
 ## Running the Verification Test Suite
@@ -85,3 +96,7 @@ tests/
     ├── test_synth_engine.cpp    # T-004, T-008, T-009, T-010, T-015, T-016, T-019
     └── main.cpp                 # Test executable entry point
 ```
+
+## Licence
+
+No licence file has been added yet.
